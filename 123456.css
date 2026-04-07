@@ -11,7 +11,7 @@ body {
 
 h1 {
     font-family: "Arial";
-    color: var(--theme);
+    color: var(--main-color); /* ✅ fixed */
 }
 
 #map {
@@ -28,11 +28,13 @@ button {
   transition: all 0.3s ease;
 }
 
+/* ✅ required hover */
 button:hover {
   background-color: #45a049;
   cursor: pointer;
   transform: scale(1.05);
 }
+
 #mapContainer {
     position: relative;
     display: none;
@@ -42,3 +44,8 @@ button:hover {
     width: 100%;
 }
 
+/* ✅ added for output */
+p {
+    font-size: 18px;
+    margin: 8px;
+}
