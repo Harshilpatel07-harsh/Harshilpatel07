@@ -1,5 +1,5 @@
 :root {
-    --theme: #280; /* CSS variable */
+  --main-color: #4CAF50;
 }
 
 body {
@@ -18,19 +18,21 @@ h1 {
     width: 100%;
 }
 
-#marker {
-    width: 3vw; /* 3% of the viewport width */
-    height: 3vw;
-    background-color: black;
-    border-radius: 50%;
-    outline: 5px solid var(--theme); /* does not affect the size */
-    border: 5px solid white; /* affects the size */
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
+button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
+button:hover {
+  background-color: #45a049;
+  cursor: pointer;
+  transform: scale(1.05);
+}
 #mapContainer {
     position: relative;
     display: none;
